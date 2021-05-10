@@ -9,4 +9,15 @@ def encryp(message):
         d.append(chr(j))
     print(''.join(d))
 
-#encryp('Hi, Vyshak !!') # Testing the Function
+encryp('Hi, Vyshak !!') # Testing the Function
+
+def descryp(message):
+    dec=[]
+    for i in message:
+        dec.append(ord(i)-5)
+    e=[]
+    for j in dec:
+        e.append(chr(j))
+    print(''.join(e))
+
+descryp('Mn1%[~xmfp%&&')
